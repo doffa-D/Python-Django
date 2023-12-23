@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Form</title>
+
+    <style>
+      .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Information</h1>
+    <form>
+      <div>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" />
+      </div>
+
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" id="last_name" required />
+      <div>
+      </div>
+
+      <div>
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" required />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="Phone">Phone</label>
+        <input type="tel" name="Phone" id="Phone" required />
+      </div>
+
+      <div>
+        <label for="Student">Student at 42?</label>
+        <input type="checkbox" name="Student" id="Student" />
+      </div>
+
+      <div>
+        <label for="Gender">Gender: </label>
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Female" value="Female" />
+      
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Male" value="Male" />
+      </div>
+      
+      <button type="button" onclick="displayFormContent()">Submit</button>
+    </form>
+  
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="popup-text">Popup Content Goes Here</p>
+      </div>
+    </div>
+  
+    <script src="ll.js"></script>
+</html>
