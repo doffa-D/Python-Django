@@ -1,6 +1,6 @@
 import sys
 
-def my_finder(state):
+def my_finder(capital):
     states = {
         "Oregon": "OR",
         "Alabama": "AL",
@@ -14,17 +14,19 @@ def my_finder(state):
         "NJ": "Trenton",
         "CO": "Denver"
     }
+    for  state , capital_city in states.items():
+        if capital_cities[capital_city] == capital:
+            return(state)
 
-    if state in states:
-        state_code = states[state]
-        capital_city =  capital_cities[state_code]
-        print(f"{capital_city}")
-    else:
-        print("Unknown state")
-    
+    return "Unknown capital city"
+
+
+
 
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
-        state = sys.argv[1].title()
-        my_finder(state)
+        print(my_finder(sys.argv[1].title()))
+
+
+
