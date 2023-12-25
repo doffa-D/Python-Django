@@ -1,5 +1,5 @@
 def my_var():
-    var = 42
+    var0 = 42
     var1 = "42"
     var2 = "quarante-deux"
     var3 = 42.0
@@ -8,7 +8,8 @@ def my_var():
     var6 = {42: 42}
     var7 = (42,)
     var8 = set()
-    print(f"{var} has a type {type(var)}")
+    
+    print(f"{var0} has a type {type(var0)}")
     print(f"{var1} has a type {type(var1)}")
     print(f"{var2} has a type {type(var2)}")
     print(f"{var3} has a type {type(var3)}")
