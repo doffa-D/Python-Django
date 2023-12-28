@@ -6,15 +6,10 @@ def main(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
         contenu = ''.join(lines)
-        a_ecrire = contenu.format(
-            first_name=first_name,
-            Last_name=Last_name,  
-            Age=Age,
-            Email=Email
-        )
+        a_ecrire = contenu.format_map(globals())
         file_html = file_path.replace('.template', '.html')
-        with open(file_html, 'w') as f_h:
-            f_h.write(a_ecrire)
+        with open(file_html, 'w') as file:
+            file.write(a_ecrire)
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
@@ -26,3 +21,4 @@ if __name__ == '__main__':
             print(f"Error: {extension} file should have .template extension")
             exit(1)
         main(sys.argv[1])
+
