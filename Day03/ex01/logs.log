@@ -1,0 +1,13 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting git+https://github.com/jaraco/path.py.git
+  Cloning https://github.com/jaraco/path.py.git to /private/var/folders/zz/zyxvpxvq6csfxvn_n000cb2m0032rn/T/pip-req-build-24jq76qy
+  Running command git clone --filter=blob:none --quiet https://github.com/jaraco/path.py.git /private/var/folders/zz/zyxvpxvq6csfxvn_n000cb2m0032rn/T/pip-req-build-24jq76qy
+  Resolved https://github.com/jaraco/path.py.git to commit f95a2a2be421912f180633b3391df0cc2ec5a03c
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
