@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex00: Markdown Cheatsheet.</title>
+    <style>
+      .style-0 {
+          flex: 0 0 75%;
+          max-width: 75%;
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          box-sizing: border-box;
+      }
+
+      .style-1 {
+          font-weight: 500;
+          padding-top: 20px;
+          font-size: 32px;
+          margin-bottom: 8px;
+          line-height: 38.4px;
+          margin-top: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-2 {
+          font: 1em / 1 anchorjs-icons;
+          padding-left: 0.375em;
+          padding-left: 12px;
+          text-decoration: none solid rgb(0, 123, 255);
+          color: rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+          opacity: 0;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      .style-3 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+      }
+
+      .style-4 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-5 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-6 {
+          font-weight: 500;
+          padding-top: 20px;
+          font-size: 32px;
+          margin-bottom: 8px;
+          line-height: 38.4px;
+          margin-top: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-7 {
+          font: 1em / 1 anchorjs-icons;
+          padding-left: 0.375em;
+          padding-left: 12px;
+          text-decoration: none solid rgb(0, 123, 255);
+          color: rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+          opacity: 0;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      .style-8 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+      }
+
+      .style-9 {
+          border: 1px solid rgb(222, 226, 230);
+          width: 100%;
+          margin-bottom: 16px;
+          color: rgb(33, 37, 41);
+          border-collapse: collapse;
+          box-sizing: border-box;
+      }
+
+      .style-10 {
+          box-sizing: border-box;
+      }
+
+      .style-11 {
+          box-sizing: border-box;
+      }
+
+      .style-12 {
+          color: rgb(73, 80, 87);
+          background-color: rgb(233, 236, 239);
+          border-color: rgb(222, 226, 230);
+          border-bottom-width: 2px;
+          border: 1px solid rgb(222, 226, 230);
+          vertical-align: bottom;
+          border-bottom: 2px solid rgb(222, 226, 230);
+          padding: 12px;
+          border-top: 1px solid rgb(222, 226, 230);
+          text-align: left;
+          box-sizing: border-box;
+      }
+
+      .style-13 {
+          color: rgb(73, 80, 87);
+          background-color: rgb(233, 236, 239);
+          border-color: rgb(222, 226, 230);
+          border-bottom-width: 2px;
+          border: 1px solid rgb(222, 226, 230);
+          vertical-align: bottom;
+          border-bottom: 2px solid rgb(222, 226, 230);
+          padding: 12px;
+          border-top: 1px solid rgb(222, 226, 230);
+          text-align: left;
+          box-sizing: border-box;
+      }
+
+      .style-14 {
+          box-sizing: border-box;
+      }
+
+      .style-15 {
+          box-sizing: border-box;
+      }
+
+      .style-16 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-17 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-18 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-19 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-20 {
+          box-sizing: border-box;
+      }
+
+      .style-21 {
+          box-sizing: border-box;
+      }
+
+      .style-22 {
+          box-sizing: border-box;
+      }
+
+      .style-23 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-24 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-25 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-26 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-27 {
+          box-sizing: border-box;
+      }
+
+      .style-28 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-29 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-30 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-31 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-32 {
+          box-sizing: border-box;
+      }
+
+      .style-33 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-34 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-35 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-36 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-37 {
+          box-sizing: border-box;
+      }
+
+      .style-38 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-39 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-40 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-41 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-42 {
+          box-sizing: border-box;
+      }
+
+      .style-43 {
+          box-sizing: border-box;
+      }
+
+      .style-44 {
+          box-sizing: border-box;
+      }
+
+      .style-45 {
+          box-sizing: border-box;
+      }
+
+      .style-46 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-47 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-48 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-49 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-50 {
+          box-sizing: border-box;
+      }
+
+      .style-51 {
+          box-sizing: border-box;
+      }
+
+      .style-52 {
+          box-sizing: border-box;
+      }
+
+      .style-53 {
+          box-sizing: border-box;
+      }
+
+      .style-54 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-55 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-56 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-57 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-58 {
+          box-sizing: border-box;
+      }
+
+      .style-59 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-60 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-61 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-62 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-63 {
+          box-sizing: border-box;
+      }
+
+      .style-64 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-65 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-66 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-67 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-68 {
+          box-sizing: border-box;
+      }
+
+      .style-69 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-70 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-71 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-72 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-73 {
+          font-weight: 500;
+          padding-top: 20px;
+          font-size: 32px;
+          margin-bottom: 8px;
+          line-height: 38.4px;
+          margin-top: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-74 {
+          font: 1em / 1 anchorjs-icons;
+          padding-left: 0.375em;
+          padding-left: 12px;
+          text-decoration: none solid rgb(0, 123, 255);
+          color: rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+          opacity: 0;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      .style-75 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+      }
+
+      .style-76 {
+          border: 1px solid rgb(222, 226, 230);
+          width: 100%;
+          margin-bottom: 16px;
+          color: rgb(33, 37, 41);
+          border-collapse: collapse;
+          box-sizing: border-box;
+      }
+
+      .style-77 {
+          box-sizing: border-box;
+      }
+
+      .style-78 {
+          box-sizing: border-box;
+      }
+
+      .style-79 {
+          color: rgb(73, 80, 87);
+          background-color: rgb(233, 236, 239);
+          border-color: rgb(222, 226, 230);
+          border-bottom-width: 2px;
+          border: 1px solid rgb(222, 226, 230);
+          vertical-align: bottom;
+          border-bottom: 2px solid rgb(222, 226, 230);
+          padding: 12px;
+          border-top: 1px solid rgb(222, 226, 230);
+          text-align: left;
+          box-sizing: border-box;
+      }
+
+      .style-80 {
+          color: rgb(73, 80, 87);
+          background-color: rgb(233, 236, 239);
+          border-color: rgb(222, 226, 230);
+          border-bottom-width: 2px;
+          border: 1px solid rgb(222, 226, 230);
+          vertical-align: bottom;
+          border-bottom: 2px solid rgb(222, 226, 230);
+          padding: 12px;
+          border-top: 1px solid rgb(222, 226, 230);
+          text-align: left;
+          box-sizing: border-box;
+      }
+
+      .style-81 {
+          box-sizing: border-box;
+      }
+
+      .style-82 {
+          box-sizing: border-box;
+      }
+
+      .style-83 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-84 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-85 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-86 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-87 {
+          box-sizing: border-box;
+      }
+
+      .style-88 {
+          box-sizing: border-box;
+      }
+
+      .style-89 {
+          box-sizing: border-box;
+      }
+
+      .style-90 {
+          box-sizing: border-box;
+      }
+
+      .style-91 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-92 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-93 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-94 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-95 {
+          box-sizing: border-box;
+      }
+
+      .style-96 {
+          box-sizing: border-box;
+      }
+
+      .style-97 {
+          box-sizing: border-box;
+      }
+
+      .style-98 {
+          box-sizing: border-box;
+      }
+
+      .style-99 {
+          box-sizing: border-box;
+      }
+
+      .style-100 {
+          box-sizing: border-box;
+      }
+
+      .style-101 {
+          box-sizing: border-box;
+      }
+
+      .style-102 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-103 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-104 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-105 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-106 {
+          box-sizing: border-box;
+      }
+
+      .style-107 {
+          box-sizing: border-box;
+      }
+
+      .style-108 {
+          box-sizing: border-box;
+      }
+
+      .style-109 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-110 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-111 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-112 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-113 {
+          box-sizing: border-box;
+      }
+
+      .style-114 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-115 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-116 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-117 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-118 {
+          box-sizing: border-box;
+      }
+
+      .style-119 {
+          box-sizing: border-box;
+      }
+
+      .style-120 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-121 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-122 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-123 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-124 {
+          box-sizing: border-box;
+      }
+
+      .style-125 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-126 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-127 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-128 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-129 {
+          box-sizing: border-box;
+      }
+
+      .style-130 {
+          box-sizing: border-box;
+      }
+
+      .style-131 {
+          box-sizing: border-box;
+      }
+
+      .style-132 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-133 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-134 {
+          box-sizing: border-box;
+      }
+
+      .style-135 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-136 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-137 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-138 {
+          box-sizing: border-box;
+      }
+
+      .style-139 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-140 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-141 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-142 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-143 {
+          box-sizing: border-box;
+      }
+
+      .style-144 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-145 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-146 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-147 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-148 {
+          box-sizing: border-box;
+      }
+
+      .style-149 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-150 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-151 {
+          border: 1px solid rgb(222, 226, 230);
+          padding: 12px;
+          vertical-align: top;
+          border-top: 1px solid rgb(222, 226, 230);
+          box-sizing: border-box;
+      }
+
+      .style-152 {
+          color: rgb(33, 37, 41);
+          font-size: 14px;
+          overflow-wrap: break-word;
+          font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'liberation mono', 'courier new', monospace;
+          box-sizing: border-box;
+      }
+
+      .style-153 {
+          font-weight: 500;
+          padding-top: 20px;
+          font-size: 32px;
+          margin-bottom: 8px;
+          line-height: 38.4px;
+          margin-top: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-154 {
+          font: 1em / 1 anchorjs-icons;
+          padding-left: 0.375em;
+          padding-left: 12px;
+          text-decoration: none solid rgb(0, 123, 255);
+          color: rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+          opacity: 0;
+          -webkit-font-smoothing: antialiased;
+      }
+
+      .style-155 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+      }
+
+      .style-156 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-157 {
+          max-width: 100%;
+          margin-top: 50px;
+          margin-top: 50px;
+          margin-bottom: 16px;
+          background-color: rgb(248, 249, 250);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-width: 0px;
+          overflow-wrap: break-word;
+          -webkit-background-clip: border-box;
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          border-radius: 4px;
+          box-sizing: border-box;
+          -webkit-background-clip: border-box;
+      }
+
+      .style-158 {
+          margin-right: 0px;
+          margin-left: 0px;
+          display: flex;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+      }
+
+      .style-159 {
+          flex: 0 0 25%;
+          max-width: 25%;
+          position: relative;
+          width: 100%;
+          padding-right: 0px;
+          padding-left: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-160 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-161 {
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+          border-style: none;
+          box-sizing: border-box;
+      }
+
+      .style-162 {
+          flex: 0 0 75%;
+          max-width: 75%;
+          position: relative;
+          width: 100%;
+          padding-right: 0px;
+          padding-left: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-163 {
+          padding-left: 6%;
+          flex: 1 1 auto;
+          min-height: 1px;
+          box-sizing: border-box;
+      }
+
+      .style-164 {
+          font-weight: 500;
+          padding-top: 20px;
+          margin-bottom: 12px;
+          font-size: 20px;
+          line-height: 24px;
+          margin-top: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-165 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+      }
+
+      .style-166 {
+          box-sizing: border-box;
+      }
+
+      .style-167 {
+          margin-top: 5px;
+          margin-right: 15pxmargin-right:15px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(40, 167, 69);
+          border-color: rgb(40, 167, 69);
+          cursor: pointer;
+          display: inline-block;
+          font-weight: 400;
+          text-align: center;
+          vertical-align: middle;
+          user-select: none;
+          border: 1px solid rgb(40, 167, 69);
+          padding: 6px 12px;
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 4px;
+          transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+          text-decoration: none solid rgb(255, 255, 255);
+          box-sizing: border-box;
+      }
+
+      .style-168 {
+          margin-top: 50pxborder-color:rgb(23, 162, 184);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-width: 0px;
+          overflow-wrap: break-word;
+          background-color: rgb(255, 255, 255);
+          -webkit-background-clip: border-box;
+          border: 1px solid rgb(23, 162, 184);
+          border-radius: 4px;
+          box-sizing: border-box;
+          border-color: rgb(23, 162, 184);
+          -webkit-background-clip: border-box;
+      }
+
+      .style-169 {
+          font-weight: 500;
+          padding-top: 12px;
+          color: rgb(255, 255, 255);
+          background-color: rgb(23, 162, 184);
+          border-radius: 3px 3px 0px 0px;
+          padding: 12px 20px;
+          margin-bottom: 0px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+          font-size: 16px;
+          line-height: 19.2px;
+          margin-top: 0px;
+          box-sizing: border-box;
+      }
+
+      .style-170 {
+          flex: 1 1 auto;
+          min-height: 1px;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+
+      .style-171 {
+          margin-top: 0px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+      }
+
+      .style-172 {
+          color: rgb(0, 123, 255);
+          text-decoration: none solid rgb(0, 123, 255);
+          background-color: rgba(0, 0, 0, 0);
+          box-sizing: border-box;
+      }
+
+      .style-173 {
+          box-sizing: border-box;
+      }
+
+      .style-174 {
+          margin-top: 20pxmargin-bottom:16px;
+          box-sizing: border-box;
+          margin-bottom: 16px;
+      }
+
+      .style-175 {
+          overflow: visible;
+          margin: 0px;
+          font-family: -apple-system, 'system-ui', 'segoe ui', Roboto, 'helvetica neue', Arial, 'noto sans', 'liberation sans', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol', 'noto color emoji';
+          font-size: 16px;
+          line-height: 24px;
+          box-sizing: border-box;
+      }
+
+      .style-176 {
+          overflow: visible;
+          margin: 0px;
+          font-family: -apple-system, 'system-ui', 'segoe ui', Roboto, 'helvetica neue', Arial, 'noto sans', 'liberation sans', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol', 'noto color emoji';
+          font-size: 16px;
+          line-height: 24px;
+          box-sizing: border-box;
+      }
+
+      .style-177 {
+          display: block;
+          width: 100%;
+          padding: 8px 16px;
+          font-size: 17.6px;
+          height: 40px;
+          line-height: 26.4px;
+          color: rgb(73, 80, 87);
+          background-color: rgb(255, 255, 255);
+          -webkit-background-clip: padding-box;
+          border: 1px solid rgb(206, 212, 218);
+          border-radius: 4.8px;
+          transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+          font-weight: 400;
+          -webkit-background-clip: padding-box;
+          overflow: visible;
+          margin: 0px;
+          font-family: -apple-system, 'system-ui', 'segoe ui', Roboto, 'helvetica neue', Arial, 'noto sans', 'liberation sans', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol', 'noto color emoji';
+          box-sizing: border-box;
+          -webkit-background-clip: padding-box;
+          -webkit-background-clip: padding-box;
+      }
+
+      .style-178 {
+          color: rgb(255, 255, 255);
+          background-color: rgb(40, 167, 69);
+          border-color: rgb(40, 167, 69);
+          cursor: pointer;
+          display: inline-block;
+          font-weight: 400;
+          text-align: center;
+          vertical-align: middle;
+          user-select: none;
+          border: 1px solid rgb(40, 167, 69);
+          padding: 6px 12px;
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 4px;
+          transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+          appearance: button;
+          text-transform: none;
+          overflow: visible;
+          margin: 0px;
+          font-family: -apple-system, 'system-ui', 'segoe ui', Roboto, 'helvetica neue', Arial, 'noto sans', 'liberation sans', sans-serif, 'apple color emoji', 'segoe ui emoji', 'segoe ui symbol', 'noto color emoji';
+          box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Markdown Cheatsheet</h1>
+    <div class="style-0">
+      <h2 class="style-1">
+        Overview<a
+          class="style-2"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          href="#overview"
+        ></a>
+      </h2>
+      <p class="style-3">
+        This Markdown cheat sheet provides a quick overview of all the Markdown
+        syntax elements. It can’t cover every edge case, so if you need more
+        information about any of these elements, refer to the reference guides
+        for <a href="/basic-syntax/" class="style-4">basic syntax</a> and
+        <a href="/extended-syntax/" class="style-5">extended syntax</a>.
+      </p>
+      <h2 class="style-6">
+        Basic Syntax<a
+          class="style-7"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          href="#basic-syntax"
+        ></a>
+      </h2>
+      <p class="style-8">
+        These are the elements outlined in John Gruber’s original design
+        document. All Markdown applications support these elements.
+      </p>
+      <table class="style-9">
+        <thead class="style-10">
+          <tr class="style-11">
+            <th class="style-12">Element</th>
+            <th class="style-13">Markdown Syntax</th>
+          </tr>
+        </thead>
+        <tbody class="style-14">
+          <tr class="style-15">
+            <td class="style-16">
+              <a href="/basic-syntax/#headings" class="style-17">Heading</a>
+            </td>
+            <td class="style-18">
+              <code class="style-19"
+                ># H1<br class="style-20" />
+                ## H2<br class="style-21" />
+                ### H3</code
+              >
+            </td>
+          </tr>
+          <tr class="style-22">
+            <td class="style-23">
+              <a href="/basic-syntax/#bold" class="style-24">Bold</a>
+            </td>
+            <td class="style-25">
+              <code class="style-26">**bold text**</code>
+            </td>
+          </tr>
+          <tr class="style-27">
+            <td class="style-28">
+              <a href="/basic-syntax/#italic" class="style-29">Italic</a>
+            </td>
+            <td class="style-30">
+              <code class="style-31">*italicized text*</code>
+            </td>
+          </tr>
+          <tr class="style-32">
+            <td class="style-33">
+              <a href="/basic-syntax/#blockquotes-1" class="style-34"
+                >Blockquote</a
+              >
+            </td>
+            <td class="style-35">
+              <code class="style-36">&gt; blockquote</code>
+            </td>
+          </tr>
+          <tr class="style-37">
+            <td class="style-38">
+              <a href="/basic-syntax/#ordered-lists" class="style-39"
+                >Ordered List</a
+              >
+            </td>
+            <td class="style-40">
+              <code class="style-41">
+                1. First item<br class="style-42" />
+                2. Second item<br class="style-43" />
+                3. Third item<br class="style-44" />
+              </code>
+            </td>
+          </tr>
+          <tr class="style-45">
+            <td class="style-46">
+              <a href="/basic-syntax/#unordered-lists" class="style-47"
+                >Unordered List</a
+              >
+            </td>
+            <td class="style-48">
+              <code class="style-49">
+                - First item<br class="style-50" />
+                - Second item<br class="style-51" />
+                - Third item<br class="style-52" />
+              </code>
+            </td>
+          </tr>
+          <tr class="style-53">
+            <td class="style-54">
+              <a href="/basic-syntax/#code" class="style-55">Code</a>
+            </td>
+            <td class="style-56"><code class="style-57">`code`</code></td>
+          </tr>
+          <tr class="style-58">
+            <td class="style-59">
+              <a href="/basic-syntax/#horizontal-rules" class="style-60"
+                >Horizontal Rule</a
+              >
+            </td>
+            <td class="style-61"><code class="style-62">---</code></td>
+          </tr>
+          <tr class="style-63">
+            <td class="style-64">
+              <a href="/basic-syntax/#links" class="style-65">Link</a>
+            </td>
+            <td class="style-66">
+              <code class="style-67">[title](https://www.example.com)</code>
+            </td>
+          </tr>
+          <tr class="style-68">
+            <td class="style-69">
+              <a href="/basic-syntax/#images-1" class="style-70">Image</a>
+            </td>
+            <td class="style-71">
+              <code class="style-72">![alt text](image.jpg)</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="style-73">
+        Extended Syntax<a
+          class="style-74"
+          aria-label="Anchor"
+          data-anchorjs-icon=""
+          href="#extended-syntax"
+        ></a>
+      </h2>
+      <p class="style-75">
+        These elements extend the basic syntax by adding additional features.
+        Not all Markdown applications support these elements.
+      </p>
+      <table class="style-76">
+        <thead class="style-77">
+          <tr class="style-78">
+            <th class="style-79">Element</th>
+            <th class="style-80">Markdown Syntax</th>
+          </tr>
+        </thead>
+        <tbody class="style-81">
+          <tr class="style-82">
+            <td class="style-83">
+              <a href="/extended-syntax/#tables" class="style-84">Table</a>
+            </td>
+            <td class="style-85">
+              <code class="style-86">
+                | Syntax | Description |<br class="style-87" />
+                | ----------- | ----------- |<br class="style-88" />
+                | Header | Title |<br class="style-89" />
+                | Paragraph | Text |
+              </code>
+            </td>
+          </tr>
+          <tr class="style-90">
+            <td class="style-91">
+              <a href="/extended-syntax/#fenced-code-blocks" class="style-92"
+                >Fenced Code Block</a
+              >
+            </td>
+            <td class="style-93">
+              <code class="style-94"
+                >```<br class="style-95" />
+                {<br class="style-96" />
+                &nbsp;&nbsp;"firstName": "John",<br class="style-97" />
+                &nbsp;&nbsp;"lastName": "Smith",<br class="style-98" />
+                &nbsp;&nbsp;"age": 25<br class="style-99" />
+                }<br class="style-100" />
+                ```
+              </code>
+            </td>
+          </tr>
+          <tr class="style-101">
+            <td class="style-102">
+              <a href="/extended-syntax/#footnotes" class="style-103"
+                >Footnote</a
+              >
+            </td>
+            <td class="style-104">
+              <code class="style-105">
+                Here's a sentence with a footnote. [^1]<br
+                  class="style-106"
+                /><br class="style-107" />
+                [^1]: This is the footnote.
+              </code>
+            </td>
+          </tr>
+          <tr class="style-108">
+            <td class="style-109">
+              <a href="/extended-syntax/#heading-ids" class="style-110"
+                >Heading ID</a
+              >
+            </td>
+            <td class="style-111">
+              <code class="style-112">### My Great Heading {#custom-id}</code>
+            </td>
+          </tr>
+          <tr class="style-113">
+            <td class="style-114">
+              <a href="/extended-syntax/#definition-lists" class="style-115"
+                >Definition List</a
+              >
+            </td>
+            <td class="style-116">
+              <code class="style-117">
+                term<br class="style-118" />
+                : definition
+              </code>
+            </td>
+          </tr>
+          <tr class="style-119">
+            <td class="style-120">
+              <a href="/extended-syntax/#strikethrough" class="style-121"
+                >Strikethrough</a
+              >
+            </td>
+            <td class="style-122">
+              <code class="style-123">~~The world is flat.~~</code>
+            </td>
+          </tr>
+          <tr class="style-124">
+            <td class="style-125">
+              <a href="/extended-syntax/#task-lists" class="style-126"
+                >Task List</a
+              >
+            </td>
+            <td class="style-127">
+              <code class="style-128">
+                - [x] Write the press release<br class="style-129" />
+                - [ ] Update the website<br class="style-130" />
+                - [ ] Contact the media
+              </code>
+            </td>
+          </tr>
+          <tr class="style-131">
+            <td class="style-132">
+              <a href="/extended-syntax/#emoji" class="style-133">Emoji</a
+              ><br class="style-134" />(see also
+              <a
+                href="/extended-syntax/#copying-and-pasting-emoji"
+                class="style-135"
+                >Copying and Pasting Emoji</a
+              >)
+            </td>
+            <td class="style-136">
+              <code class="style-137"> That is so funny! :joy: </code>
+            </td>
+          </tr>
+          <tr class="style-138">
+            <td class="style-139">
+              <a href="/extended-syntax/#highlight" class="style-140"
+                >Highlight</a
+              >
+            </td>
+            <td class="style-141">
+              <code class="style-142">
+                I need to highlight these ==very important words==.
+              </code>
+            </td>
+          </tr>
+          <tr class="style-143">
+            <td class="style-144">
+              <a href="/extended-syntax/#subscript" class="style-145"
+                >Subscript</a
+              >
+            </td>
+            <td class="style-146"><code class="style-147"> H~2~O </code></td>
+          </tr>
+          <tr class="style-148">
+            <td class="style-149">
+              <a href="/extended-syntax/#superscript" class="style-150"
+                >Superscript</a
+              >
+            </td>
+            <td class="style-151"><code class="style-152"> X^2^ </code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

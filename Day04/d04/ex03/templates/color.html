@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color</title>
+    <style>
+      tr,
+      th {
+        width: 80px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Color</h1>
+    <table>
+      <tr>
+        <th>Black</th>
+        <th>Red</th>
+        <th>Blue</th>
+        <th>Green</th>
+      </tr>
+      <tr>
+        {% for black, red, green, blue in color_list %}
+        <tr>
+        <td style="background-color: {{ black }};"></td>
+        <td style="background-color: {{ red }};"></td>
+        <td style="background-color: {{ green }};"></td>
+        <td style="background-color: {{ blue }};"></td>
+        </tr>
+        {% endfor %}
+      </tr>
+    </table>
+  </body>
+</html>

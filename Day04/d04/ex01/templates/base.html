@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} this is base {% endblock %}</title>
+    <style>
+      {% block style %}
+          body {
+              background-color: #f0f0f0;
+          }
+      {% endblock %}
+    </style>
+  </head>
+  <body>
+    <h1>{% block content %} Base {% endblock %}</h1>
+  </body>
+</html>

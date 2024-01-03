@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ex01: Display process of a static page.</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <h1>Static Web Pages : Process Overview</h1>
+    <ul>
+      <li>Client sends a request to the server.</li>
+      <li>Server receives the request and sends it to the Django framework.</li>
+      <li>
+        Django framework looks for the requested page in the
+        <code>urls.py</code> file.
+      </li>
+      <li>
+        If the page is found, Django framework sends the request to the
+        <code>views.py</code> file.
+      </li>
+      <li>
+        <code>views.py</code> file processes the request and sends it back to
+        the Django framework.
+      </li>
+      <li>Django framework sends the response to the server.</li>
+      <li>Server sends the response to the client.</li>
+    </ul>
+  </body>
+</html>

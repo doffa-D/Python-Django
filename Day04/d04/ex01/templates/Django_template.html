@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex01: Template engine</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ex01: Template engine</h1>
+
+    <p>
+      In this page, we'll explore the functioning of Django’s default template
+      engine, including the following features:
+    </p>
+
+    <h2>1. Django's Default Template Engine</h2>
+    <p>
+      Django's template engine is a powerful tool that allows you to embed
+      dynamic content into HTML. It follows a syntax similar to Python, making
+      it easy for developers to write templates while maintaining separation of
+      concerns.
+    </p>
+
+    <h2>2. Blocks</h2>
+    <p>
+      Blocks are a fundamental part of Django templates. They allow you to
+      define sections in a template that can be overridden in child templates.
+      This feature is crucial for creating modular and reusable templates.
+    </p>
+
+    <h2>3. Loops (for ... in)</h2>
+    <p>
+      Django templates support loops using the and tags. These loops are handy
+      for iterating over lists, querysets, or other iterable objects and
+      dynamically generating content based on data.
+    </p>
+
+    <h2>4. if Control Structures</h2>
+    <p>
+      Conditional statements are supported through the {% if ... %}, {% elif ...
+      %}, and {% endif %} tags. These structures allow you to conditionally
+      render content based on certain conditions, enhancing the flexibility of
+      your templates.
+    </p>
+
+    <h2>5. Display of Passing Context Variables</h2>
+    <p>
+      Context variables are passed from views to templates, and you can display
+      them using double curly braces {{ ... }}. These variables hold dynamic
+      data that can be incorporated into the HTML to create personalized and
+      data-driven content.
+    </p>
+  </body>
+</html>
