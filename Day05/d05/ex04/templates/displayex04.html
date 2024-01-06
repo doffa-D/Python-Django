@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies in DB</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid white;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <h1>Movies in DB</h1>
+    {% for title, episode_nb, opening_crawl, director, producer, release_date in movies_list %}
+    <div>
+      {% if title %}
+      <h2>{{ title }}</h2>
+      <p>Episode: {{ episode_nb }}</p>
+      <p>Opening Crawl: {{ opening_crawl }}</p>
+      <p>Director: {{ director }}</p>
+      <p>Producer: {{ producer }}</p>
+      <p>Release Date: {{ release_date }}</p>
+      {% else %}
+      <p>No data available</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </body>
+</html>

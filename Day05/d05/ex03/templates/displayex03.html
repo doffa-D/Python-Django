@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid white;
+        }
+        
+    </style>
+</head>
+<body>
+    {% for movie in movies_list %}
+        {% if movie.title != None %}
+            <h1>{{ movie.title }}</h1>
+            <ul>
+                <li>Episode: {{ movie.episode_nb }}</li>
+                <li>Director: {{ movie.director }}</li>
+                <li>Producer: {{ movie.producer }}</li>
+                <li>Release date: {{ movie.release_date }}</li>
+            </ul>
+        {% else %}
+            <h1>Movie not found</h1>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
