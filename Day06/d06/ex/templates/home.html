@@ -1,0 +1,19 @@
+<!-- FILEPATH: /Users/hdagdagu/Desktop/python/Day06/d06/ex/templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+{% block content %}
+  <div style="text-align: center;">
+    <h1>Home</h1>
+    <p>Welcome to the home page!</p>
+    <p><strong>{{username}}</strong></p>
+    <form method="post" action="{% url 'SingIn' %}">
+      {% csrf_token %}
+      <button type="submit">Sign In</button>
+    </form>
+    <form method="post" action="{% url 'SingUp' %}">
+      {% csrf_token %}
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+{% endblock %}

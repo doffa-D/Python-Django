@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} SingUp {% endblock %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <input type='submit' value='Submit' />
+    </form>
+    <form method="post" action="{% url 'SingIn' %}">
+        {% csrf_token %}
+        <button type="submit">Sign In</button>
+      </form>
+{% endblock %}

@@ -1,0 +1,91 @@
+body {
+  background-color: #000;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e50914;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  background-color: #444;
+  outline: none;
+}
+
+form input[type="submit"] {
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #b20710;
+}
+
+form .helptext {
+  font-size: 12px;
+  color: #737373;
+}
+
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: #555;
+}

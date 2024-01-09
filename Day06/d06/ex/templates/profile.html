@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %} Profile {% endblock %}
+{% block content %}
+    <div style="text-align: center;">
+        <h1>Profile</h1>
+        {% if user.is_authenticated %}
+            <p>Welcome to your profile page, {{ user.username }}!</p>
+            <img src="https://cdn.intra.42.fr/users/0f411eed92f1feb9b51ab0084045cf67/hdagdagu.jpg" alt="Image Description" style="width: 200px; height: 200px; border-radius: 50%;">
+            <form method="post" action="{% url 'SingOut' %}">
+                {% csrf_token %}
+                <button type="submit">Sign Out</button>
+            </form>
+        {% else %}
+            <p>You are not authenticated.</p>
+            <form method="post" action="{% url 'SingIn' %}">
+                {% csrf_token %}
+                <button type="submit">Sign In</button>
+            </form>
+            <form method="post" action="{% url 'SingUp' %}">
+                {% csrf_token %}
+                <button type="submit">Sign Up</button>
+            </form>   
+        {% endif %}
+    </div>
+{% endblock %}
